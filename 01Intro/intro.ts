@@ -7,3 +7,5 @@ console.log(user.name);
 
 // * This will throw errors
 console.log(user.email);
+
+export {};
