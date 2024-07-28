@@ -38,3 +38,31 @@ type User = {
   isActive: boolean;
 };
 const createUserWithAlias = (user: User) => {};
+
+// * Example of readonly keyword & optional properties(? symbol)
+type UserRecord = {
+  readonly _id: string;
+  name: string;
+  email: string;
+  creditCardNo?: string;
+};
+// If we do not pass credCardNo, it is considered as valid case as it is marked as an optional property
+const userObj2: UserRecord = {
+  _id: '111',
+  name: 'Soham',
+  email: 'a@a.com',
+};
+// For following line, TS compiler will throw an error.
+userObj2._id = '444';
+
+// * Combining multiple types - using & operator
+type cardNumber = {
+  cardNumber: string;
+};
+type cardDate = {
+  cardDate: string;
+};
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
