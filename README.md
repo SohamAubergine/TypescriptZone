@@ -17,3 +17,7 @@ Soham's Typescript Zone
 - functions.ts -> Few basic examples of defining functions with type annotations in TS
 - objects.ts -> Basic example of defining object types & annoting function parameters/return types as objects | Further examples : type aliases, readonly keyword, optional attributes, & operator for combining types
 - arrays.ts -> Basic array examples with type definitions
+
+# Section 3 - Types Concepts : Some examples of concepts related to types
+
+- unions.ts -> Examples of defining union types in TS
