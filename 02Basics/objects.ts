@@ -30,3 +30,11 @@ let userObj = {
   email: 'a@a.com',
 };
 createUser(userObj);
+
+// * Type alias example
+type User = {
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+const createUserWithAlias = (user: User) => {};
